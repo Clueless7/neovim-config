@@ -1,0 +1,12 @@
+require('config.lazy')
+require('config.remap')
+require('config.set')
+
+require('lspconfig').jsonls.setup({
+    settings = {
+        json = {
+            schemas = require('schemastore').json.schemas(),
+            validate = { enable = true },
+        },
+    },
+})
