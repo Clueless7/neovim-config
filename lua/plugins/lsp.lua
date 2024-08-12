@@ -40,9 +40,9 @@ return {
 
             -- Add cmp_nvim_lsp capabilities settings to lspconfig
             lspconfig.util.default_config.capabilities = vim.tbl_deep_extend(
-            'force',
-            lspconfig.util.default_config.capabilities,
-            require('cmp_nvim_lsp').default_capabilities()
+                'force',
+                lspconfig.util.default_config.capabilities,
+                require('cmp_nvim_lsp').default_capabilities()
             )
 
             -- Executes the callback function every time a
@@ -62,9 +62,10 @@ return {
                     vim.keymap.set('n', '<F2>', '<cmd>lua vim.lsp.buf.rename()<cr>', opts)
                     vim.keymap.set({ 'n', 'x' }, '<F3>', '<cmd>lua vim.lsp.buf.format({async = true})<cr>', opts)
                     vim.keymap.set('n', '<F4>', '<cmd>lua vim.lsp.buf.code_action()<cr>', opts)
+
+                    vim.keymap.set('n', '<leader>d', vim.diagnostic.open_float)
                 end,
             })
-
         end
     },
     {
