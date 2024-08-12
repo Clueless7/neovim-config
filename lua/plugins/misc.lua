@@ -1,4 +1,6 @@
 return {
     -- Auto detect tab    
-    { 'tpope/vim-sleuth' }
+    { 'tpope/vim-sleuth' },
+    -- Git
+    { 'tpope/vim-fugitive' }
 }
