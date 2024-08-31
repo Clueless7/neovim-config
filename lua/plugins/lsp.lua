@@ -11,21 +11,14 @@ return {
             require('mason-lspconfig').setup({
                 ensure_installed = {
                     "clangd",
-                    "css-lsp",
+                    "cssls",
                     "emmet_language_server",
                     "gopls",
-                    "html-lsp",
                     "html",
-                    "json-lsp",
                     "jsonls",
-                    "lua-language-server",
                     "lua_ls",
-                    "prettier",
-                    "rust-analyzer",
                     "rust_analyzer",
-                    "svelte-language-server",
                     "svelte",
-                    "typescript-language-server",
                     "tsserver",
                 },
                 handlers = {
