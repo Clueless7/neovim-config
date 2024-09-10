@@ -19,7 +19,7 @@ return {
                     "lua_ls",
                     "rust_analyzer",
                     "svelte",
-                    "tsserver",
+                    "ts_ls",
                 },
                 handlers = {
                     function(server_name)
